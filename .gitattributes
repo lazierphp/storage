@@ -1,0 +1,4 @@
+SimpleStorageTest.php             export-ignore
+Adapter/EnvStorageTest.php        export-ignore
+Adapter/JsonFileStorageTest.json  export-ignore
+Adapter/JsonFileStorageTest.php   export-ignore

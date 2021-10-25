@@ -1,0 +1,21 @@
+{
+    "name": "lazy/storage",
+    "description": "Lazy key-value store",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["store", "key-value", "key value", "json"],
+    "autoload": {
+        "psr-4": {
+            "Lazy\\Storage\\": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lazy contributors",
+            "homepage": "https://github.com/phplazy/lazy/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    }
+}

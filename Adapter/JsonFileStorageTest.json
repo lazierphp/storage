@@ -1,0 +1,7 @@
+{
+    "foo": "bar",
+    "test_string": "lina",
+    "test_int": 42,
+    "test_float": 13.37,
+    "test_null": null
+}
