@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lazy\Storage;
+namespace Lazier\Storage;
 
 class SimpleStorage implements StorageAdapter
 {

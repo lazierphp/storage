@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Lazy\Csv;
+namespace Lazier\Csv;
 
-use Lazy\Storage\Adapter\EnvStorage;
+use Lazier\Storage\Adapter\EnvStorage;
 use PHPUnit\Framework\TestCase;
 
 use function count;
@@ -24,8 +24,8 @@ class EnvStorageTest extends TestCase
 
     public function testItHasTestEnvironment(): void
     {
-        self::assertTrue($this->store->hasItem('LAZY_ENV'));
-        self::assertEquals('test', $this->store->getItem('LAZY_ENV'));
+        self::assertTrue($this->store->hasItem('LAZIER_ENV'));
+        self::assertEquals('test', $this->store->getItem('LAZIER_ENV'));
     }
 
     public function testItHasMoreThanOneEnvironmentVariable(): void
@@ -37,16 +37,16 @@ class EnvStorageTest extends TestCase
     {
         $envCount = count($this->store);
 
-        $this->store->removeItem('LAZY_ENV');
+        $this->store->removeItem('LAZIER_ENV');
 
         self::assertCount($envCount - 1, $this->store);
-        self::assertFalse($this->store->hasItem('LAZY_ENV'));
+        self::assertFalse($this->store->hasItem('LAZIER_ENV'));
     }
 
     public function testItAddsVariable(): void
     {
-        $this->store->setItem('LAZY_TEST_NEW_VARIABLE', 'true');
+        $this->store->setItem('LAZIER_TEST_NEW_VARIABLE', 'true');
 
-        self::assertEquals('true', getenv('LAZY_TEST_NEW_VARIABLE'));
+        self::assertEquals('true', getenv('LAZIER_TEST_NEW_VARIABLE'));
     }
 }

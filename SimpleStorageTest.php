@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lazy\Storage;
+namespace Lazier\Storage;
 
 use PHPUnit\Framework\TestCase;
 use Prophecy\PhpUnit\ProphecyTrait;

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Lazy\Storage\Adapter;
+namespace Lazier\Storage\Adapter;
 
-use Lazy\Storage\KeyNotFound;
-use Lazy\Storage\StorageAdapter;
+use Lazier\Storage\KeyNotFound;
+use Lazier\Storage\StorageAdapter;
 
 use function count;
 use function getenv;

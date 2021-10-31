@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Lazy\Csv;
+namespace Lazier\Csv;
 
 use Exception;
-use Lazy\Storage\Adapter\JsonFileStorage;
-use Lazy\Storage\KeyNotFound;
+use Lazier\Storage\Adapter\JsonFileStorage;
+use Lazier\Storage\KeyNotFound;
 use PHPUnit\Framework\TestCase;
 
 use function copy;
@@ -27,8 +27,8 @@ class JsonFileStorageTest extends TestCase
 
     public function setUp(): void
     {
-        $existingTempFilename = tempnam(sys_get_temp_dir(), 'lazy_json_test_copy');
-        $emptyTempFilename = tempnam(sys_get_temp_dir(), 'lazy_json_test_empty');
+        $existingTempFilename = tempnam(sys_get_temp_dir(), 'Lazier_json_test_copy');
+        $emptyTempFilename = tempnam(sys_get_temp_dir(), 'Lazier_json_test_empty');
 
         if (!$existingTempFilename || !$emptyTempFilename) {
             throw new Exception('Cannot create temp files for unit test.');
